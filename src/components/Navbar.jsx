@@ -1,18 +1,18 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment } from "react";
 import { FaAlignRight } from "react-icons/fa6";
 import { GiCancel } from "react-icons/gi";
-import { Popover, Transition } from '@headlessui/react'
-import Amorad from "../assets/amorad.png"
-import Image from 'next/image'
+import { Popover, Transition } from "@headlessui/react";
+import Amorad from "../assets/amorad.png";
+import Image from "next/image";
 const navigation = [
-  { name: 'About', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Radiologists', href: '#' },
-  { name: 'Hospitals', href: '#' },
-  { name: 'Marketing', href: '#' },
-  { name: 'Research', href: '#' },
-]
+  { name: "About", href: "#" },
+  { name: "Features", href: "#" },
+  { name: "Radiologists", href: "#" },
+  { name: "Hospitals", href: "#" },
+  { name: "Marketing", href: "#" },
+  { name: "Research", href: "#" },
+];
 
 export default function Navbar() {
   return (
@@ -20,7 +20,10 @@ export default function Navbar() {
       <div className="relative py-6">
         <Popover>
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6">
-            <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+            <nav
+              className="relative flex items-center justify-between sm:h-10 md:justify-center"
+              aria-label="Global"
+            >
               <div className="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">
                 <div className="flex items-center justify-between w-full lg:w-auto">
                   <a href="#">
@@ -33,28 +36,31 @@ export default function Navbar() {
                   </a>
                   <div className="-mr-2 flex items-center lg:hidden">
                     <Popover.Button className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-primary hover:text-gray-500 hover:bg-gray-100 outline-none">
-                        <FaAlignRight size={25}/>
+                      <FaAlignRight size={25} />
                     </Popover.Button>
                   </div>
                 </div>
               </div>
               <div className="hidden lg:flex lg:space-x-10 md:space-x-4">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="font-medium text-gray-500 hover:text-gray-900"
+                  >
                     {item.name}
                   </a>
                 ))}
               </div>
               <div className="hidden lg:absolute lg:flex md:items-center md:justify-end md:inset-y-0 md:right-0 lg:space-x-4 md:space-x-2">
-              <span className="inline-flex rounded-md shadow">
-                <a
+                <span className="inline-flex rounded-md shadow">
+                  <a
                     href="#"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:text-white hover:bg-primary"
                   >
                     Get Started
                   </a>
-                  </span>
-             
+                </span>
               </div>
             </nav>
           </div>
@@ -75,16 +81,12 @@ export default function Navbar() {
               <div className="rounded-lg shadow-md h-full bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div>
-                    <Image
-                      className="h-8 w-auto"
-                      src={Amorad}
-                      alt=""
-                    />
+                    <Image className="h-8 w-auto" src={Amorad} alt="" />
                   </div>
                   <div className="-mr-2">
                     <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-primary hover:text-gray-500 outline-none">
                       <span className="sr-only">Close menu</span>
-                       <GiCancel size={25}/>
+                      <GiCancel size={25} />
                     </Popover.Button>
                   </div>
                 </div>
@@ -111,5 +113,5 @@ export default function Navbar() {
         </Popover>
       </div>
     </div>
-  )
+  );
 }
