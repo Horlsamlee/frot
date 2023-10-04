@@ -39,7 +39,7 @@ export default function Home() {
       <About />
       <Reports />
       <Features />
-      <Radiologists />
+      {/* <Radiologists /> */}
     </main>
   )
 }

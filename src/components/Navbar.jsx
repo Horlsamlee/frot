@@ -16,7 +16,7 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <div className="fixed w-full bg-gray-50 overflow-hidden font-sans">
+    <div className="fixed w-full z-10 bg-gray-50 overflow-hidden font-sans">
       <div className="relative py-6">
         <Popover>
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6">

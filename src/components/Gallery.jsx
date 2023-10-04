@@ -8,7 +8,8 @@ import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 const Gallery = () => {
   return (
-    <div>
+    <div className="my-6">
+      <h1 className="text-2xl font-bold underline text-center"><span className="text-primary">AMORAD </span>Features Gallery</h1>
       <ImageGallery />
     </div>
   );
@@ -16,32 +17,27 @@ const Gallery = () => {
 
 export default Gallery;
 
-function ImageGallery({ width }) {
+function ImageGallery() {
   return (
-    <Carousel width="100%" autoPlay={true} interval={1500}>
-      <div>
-        <Image src={img1} alt="gallery" />
-        <p className="legend">Legend 1</p>
-      </div>
-
+    <Carousel width="60%" autoPlay={true} interval={1500}>
       <div>
         <Image src={img2} alt="gallery" />
-        <p className="legend">Legend 1</p>
-      </div>
-
-      <div>
-        <Image src={img3} alt="gallery" />
-        <p className="legend">Legend 1</p>
+        <p className="legend">Dashboard</p>
       </div>
 
       <div>
         <Image src={img4} alt="gallery" />
-        <p className="legend">Legend 1</p>
+        <p className="legend">Dicom Viewer</p>
+      </div>
+
+      <div>
+        <Image src={img3} alt="gallery" />
+        <p className="legend">Expanded Viewer</p>
       </div>
 
       <div>
         <Image src={img1} alt="gallery" />
-        <p className="legend">Legend 1</p>
+        <p className="legend">Records</p>
       </div>
     </Carousel>
   );

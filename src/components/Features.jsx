@@ -1,9 +1,10 @@
 import React from "react";
 import { FaCheck, FaClock, FaShield, FaRobot } from "react-icons/fa6";
+import Gallery from "./Gallery";
 const Features = () => {
   return (
     <div className="w-full bg-gray-100">
-      <section className="flex flex-col justify-center  m-auto md:py-12 text-black font-sans">
+      <section className="flex flex-col justify-center m-auto md:py-12 text-black font-sans">
         <div className="container max-w-[1200px]  md:py-0 py-24 px-4 sm:px-6 flex justify-between gap-4 items-center mx-auto">
           <div className="lg:flex-row flex-col flex lg:items-center gap-6">
             <div className="lg:w-1/2">
@@ -48,6 +49,7 @@ const Features = () => {
             </div>
           </div>
         </div>
+        <Gallery />
       </section>
     </div>
   );
