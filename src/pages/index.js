@@ -2,11 +2,10 @@
 import { Lora, Open_Sans, Poppins } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
-import Partners from '@/components/Partners'
 import About from '@/components/About'
 import Features from '@/components/Features'
 import Reports from '@/components/Reports'
-import Radiologists from '@/components/Radiologists'
+
 const open_sans = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
