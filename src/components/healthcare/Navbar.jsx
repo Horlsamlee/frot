@@ -3,10 +3,11 @@ import { Fragment } from "react";
 import { FaAlignRight } from "react-icons/fa6";
 import { GiCancel } from "react-icons/gi";
 import { Popover, Transition } from "@headlessui/react";
-import Amorad from "../assets/amorad.png";
+import Amorad from "../../assets/amorad.png";
 import Image from "next/image";
+import Link from "next/link";
 const navigation = [
-  { name: "About", href: "#" },
+  { name: "About", href: "/about" },
   { name: "Features", href: "#" },
   { name: "Radiologists", href: "#" },
   { name: "Hospitals", href: "#" },
@@ -43,13 +44,13 @@ export default function Navbar() {
               </div>
               <div className="hidden lg:flex lg:space-x-10 md:space-x-4">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="font-medium text-gray-500 hover:text-gray-900"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className="hidden lg:absolute lg:flex md:items-center md:justify-end md:inset-y-0 md:right-0 lg:space-x-4 md:space-x-2">

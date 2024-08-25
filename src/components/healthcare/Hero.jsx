@@ -1,5 +1,5 @@
 import React from "react";
-import radilogy from "../assets/pexels-andre-11722768.jpg";
+import radilogy from "../../assets/pexels-andre-11722768.jpg";
 import Image from "next/image";
 import Link from "next/link";
 const Hero = () => {

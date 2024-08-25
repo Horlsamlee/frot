@@ -1,5 +1,5 @@
 import React from "react";
-import amorad from "../assets/iPhone mini - Dark (2).png";
+import amorad from "../../assets/iPhone mini - Dark (2).png";
 import Image from "next/image";
 import Link from "next/link";
 

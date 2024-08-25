@@ -1,10 +1,11 @@
 // import localFont from "next/font/local"
 import { Lora, Open_Sans, Poppins } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Features from '@/components/Features'
-import Reports from '@/components/Reports'
+// import Navbar from '@/components/Navbar'
+// import Hero from '@/components/Hero'
+// import About from '@/components/About'
+// import Features from '@/components/Features'
+// import Reports from '@/components/Reports'
+import HealthCare from '@/components/healthcare'
 
 const open_sans = Open_Sans({
   subsets: ['latin'],
@@ -33,12 +34,7 @@ export default function Home() {
     <main
       className={`${poppins.variable} ${open_sans.variable} ${lora.variable}`}
     >
-      <Navbar />
-      <Hero />     
-      <About />
-      <Reports />
-      <Features />
-      {/* <Radiologists /> */}
+    <HealthCare />
     </main>
   )
 }

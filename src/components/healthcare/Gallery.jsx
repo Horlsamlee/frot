@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../assets/record.png";
-import img2 from "../assets/Dashboard-1.png";
-import img3 from "../assets/diacom-record.png";
-import img4 from "../assets/Dicom-view.png";
+import img1 from "../../assets/record.png";
+import img2 from "../../assets/Dashboard-1.png";
+import img3 from "../../assets/diacom-record.png";
+import img4 from "../../assets/Dicom-view.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
